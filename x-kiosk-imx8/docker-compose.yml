@@ -2,11 +2,10 @@ version: '3.6'
 
 services:
   xkiosk-imx8:
-    image: hub.foundries.io/${FACTORY}/x-kiosk-imx8:latest
+    image: wero1414/x-kiosk-imx8:latest-arm64
     restart: unless-stopped
     tty: true
-    command: "${ADDR-www.foundries.io}"
-    #command: "--kiosk --no-first-run --incognito www.foundries.io}"
+    command: "--kiosk --no-first-run --incognito www.foundries.io}"
     read_only: true
     network_mode: "host"
     tmpfs:
