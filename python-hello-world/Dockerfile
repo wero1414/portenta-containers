@@ -24,7 +24,7 @@ COPY ./src/main.py ./
 # Enable udevd so that plugged dynamic hardware devices show up in our container.
 ENV UDEV=1
 
-#Expose port for HTTP Server
+# Expose port for HTTP Server
 EXPOSE 80/tcp
 
 # main.py will run when container starts up on the device
