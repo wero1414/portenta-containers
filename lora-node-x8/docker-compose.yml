@@ -2,7 +2,7 @@ version: '3.6'
 
 services:
   lora-node:
-    image: hub.foundries.io/${FACTORY}/lora-node-x8:latest
+    image: wero1414/lora-node-x8:latest-arm64
     container_name: 'lora-node'
     restart: unless-stopped
     environment:
